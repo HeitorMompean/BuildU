@@ -1,0 +1,12 @@
+# R01-M scaffolding ownership. Human approves all PRs.
+/* @human-owner
+/apps/api/ @human-owner
+/apps/worker/ @human-owner
+/apps/mobile/ @human-owner
+/apps/admin/ @human-owner
+/packages/backend/ @human-owner
+/packages/domain/ @human-owner
+/packages/api-client/ @human-owner
+/packages/testing/ @human-owner
+/infra/terraform/ @human-owner
+/scripts/verification/ @human-owner

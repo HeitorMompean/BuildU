@@ -1,0 +1,4 @@
+# Maestro mobile smoke placeholder. R10 fills E2E.
+appId: com.example.hs.staging
+---
+- launchApp

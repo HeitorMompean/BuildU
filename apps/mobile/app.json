@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "Home Services",
+    "slug": "hs-mobile",
+    "scheme": "hs-mobile",
+    "version": "0.0.0",
+    "orientation": "portrait",
+    "newArchEnabled": true,
+    "runtimeVersion": { "policy": "fingerprint" },
+    "ios": { "bundleIdentifier": "com.example.hs.staging" },
+    "android": { "package": "com.example.hs.staging" },
+    "plugins": ["expo-router"],
+    "extra": { "router": {}, "eas": { "projectId": "00000000-0000-0000-0000-000000000000" } }
+  }
+}

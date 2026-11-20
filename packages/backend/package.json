@@ -1,0 +1,39 @@
+{
+  "name": "@hs/backend",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint . --max-warnings=0",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.800.0",
+    "@aws-sdk/client-sesv2": "^3.800.0",
+    "@aws-sdk/client-sqs": "^3.800.0",
+    "@hs/domain": "workspace:*",
+    "@nestjs/common": "^11.1.6",
+    "@nestjs/config": "^4.0.2",
+    "@nestjs/core": "^11.1.6",
+    "@nestjs/swagger": "^11.2.0",
+    "aws-jwt-verify": "^4.0.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "kysely": "^0.28.7",
+    "pg": "^8.16.3",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@nestjs/testing": "^11.1.6",
+    "@types/node": "^22.16.0",
+    "@types/pg": "^8.15.5",
+    "typescript": "~5.9.2",
+    "vitest": "^3.2.4"
+  }
+}

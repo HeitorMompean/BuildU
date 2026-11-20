@@ -1,0 +1,13 @@
+# Copy to terraform.tfvars and fill human-supplied values. Never commit real values.
+# project      = "hs"
+# environment  = "staging"
+# region       = "us-east-1"
+# domain       = "example.com"
+# hosted_zone_id  = "Z00000000000000000000"
+# certificate_arn = "arn:aws:acm:us-east-1:000000000000:certificate/..."
+# db_instance_class = "db.t4g.micro"
+# alert_emails = ["alerts@example.com"]
+# ses_from_address = ""
+# api_image    = "<account>.dkr.ecr.us-east-1.amazonaws.com/hs-staging-api@sha256:<digest>"
+# admin_image  = "<account>.dkr.ecr.us-east-1.amazonaws.com/hs-staging-admin@sha256:<digest>"
+# worker_image = "<account>.dkr.ecr.us-east-1.amazonaws.com/hs-staging-worker@sha256:<digest>"

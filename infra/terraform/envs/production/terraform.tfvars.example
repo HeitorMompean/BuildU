@@ -1,0 +1,9 @@
+# Copy to terraform.tfvars and fill human-supplied values. Never commit real values.
+# project      = "hs"
+# environment  = "production"
+# region       = "us-east-1"
+# domain       = "example.com"
+# hosted_zone_id  = "Z00000000000000000000"
+# certificate_arn = "arn:aws:acm:us-east-1:000000000000:certificate/..."
+# db_instance_class = "db.t4g.small"
+# alert_emails = ["alerts@example.com"]

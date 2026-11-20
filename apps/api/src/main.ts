@@ -1,0 +1,14 @@
+import 'reflect-metadata';
+import { NestFactory } from '@nestjs/core';
+import { ValidationPipe } from '@nestjs/common';
+import { AppModule } from './app.module.js';
+import { loadApiConfig } from './config.js';
+
+async function bootstrap(): Promise<void> {
+  const config = loadApiConfig();
+  const app = await NestFactory.create(AppModule);
+  app.setGlobalPrefix('v1', { exclude: ['health/live', 'health/ready'] });
+  app.useGlobalPipes(new ValidationPipe({ whitelist: true, transform: true }));
+  await app.listen(config.PORT);
+}
+bootstrap().catch((e) => { console.error(e); process.exit(1); });
